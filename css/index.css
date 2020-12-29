@@ -1,0 +1,75 @@
+:root{
+    --font: 'Roboto', sans-serif;
+    --size-big: 1.5rem;
+    --size-medium:1.25rem;
+    --size-small:1rem;
+    --color-dark-login:#161730;
+    --color-letter:#CDCFCF;
+    --color-black:#000000;
+    --color-white:#FFFFFF;
+    --color-back:#ACC4E4;
+}
+body{
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-back);
+}
+.container{
+    /* centrar contendio y div */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 30rem;
+    width: 20rem;
+    background-color: var(--color-dark-login);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.login form{
+width: 85%;
+text-align: center;
+}
+.login h2, p{
+    color: var(--color-white);
+    width: 99%;
+    margin: 0;
+    text-align: left;
+}
+.login p{
+    color: var(--color-letter);
+    margin-bottom: .6rem;
+}
+form input{
+    width: 100%;
+    border: none;
+    padding: 0;
+    background: none;
+    color: var(--color-letter);
+    border-bottom: 1px solid var(--color-letter);
+    margin-bottom: 2rem;
+}
+.login-boton{
+    border: none;
+    background: linear-gradient(90deg, #912DDD, #008AFD);
+    padding: .6rem 0;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: var(--size-small);
+}
+.login-boton:hover{
+    background: none;
+    border: 1px solid var(--color-letter);
+    cursor: pointer;
+}
+.mensaje-error{
+    color: var(--color-white);
+}
+

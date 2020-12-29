@@ -1,0 +1,73 @@
+:root {
+    --font: 'Roboto', sans-serif;
+    --size-big: 1.5rem;
+    --size-medium: 1.25rem;
+    --size-small: 1rem;
+    --color-dark-login: #161730;
+    --color-dark-dos: #172033;
+    --color-letter: #CDCFCF;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-back: #ACC4E4;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-back);
+}
+
+
+.consultar {
+    background: var(--color-white);
+}
+
+.consultar table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.consultar thead tr td {
+    padding: 1rem .1rem;
+}
+
+.consultar thead tr {
+    background-color: var(--color-dark-login);
+    color: var(--color-white);
+    text-align: left;
+}
+
+.consultar tbody tr td {
+    border: 1px solid gray;
+    padding: .5rem .1rem;
+    text-align: left;
+    font-weight: 200;
+
+}
+
+.consultar tr td {
+    border-collapse: collapse;
+}
+
+.odd th,
+.odd td {
+    background: rgb(192, 107, 107);
+}
+
+/* par */
+.consultar tbody tr:nth-child(even) {
+    background: var(--color-dark-dos);
+    color: var(--color-white);
+}
+
+.consultar tbody tr a {
+    background: #0033AC;
+    color: var(--color-white);
+    border-radius: 5rem;
+    padding: .3rem .5rem;
+}
+.consultar-boton{
+    text-align: center;
+}

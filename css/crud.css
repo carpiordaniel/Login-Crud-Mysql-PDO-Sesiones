@@ -1,0 +1,115 @@
+:root {
+    --font: 'Roboto', sans-serif;
+    --size-big: 1.5rem;
+    --size-medium: 1.25rem;
+    --size-small: 1rem;
+    --color-dark-login: #161730;
+    --color-dark-dos: #172033;
+    --color-letter: #CDCFCF;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-back: #ACC4E4;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-back);
+}
+
+.container-crud {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.crud h3{
+    margin-bottom: 0;
+    position: relative;
+    top: 3rem;
+    font-weight: 400;
+}
+.crud form {
+    width: 100%;
+    height: 100%;
+
+}
+
+.crud form input {
+    display: inline-block;
+    width: 49%;
+    border: 0;
+    padding: 0;
+    height: 1rem
+}
+
+.container-input {
+    display: inline-block;
+    width: 49%;
+    background-color: var(--color-dark-login);
+    border-radius: .2rem;
+    overflow: hidden;
+
+}
+
+.container-input i {
+    padding: .4rem;
+    background-color: var(--color-dark-dos);
+    color: var(--color-white);
+
+
+}
+
+.container-input input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-login);
+    color: var(--color-white);
+    margin-left: .5rem;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield !important;
+    margin-left: 1rem;
+    -moz-appearance: textfield !important;
+}
+
+.crud-boton {
+    display: inline-block;
+    width: 49%;
+    background: #000c33;
+    height: 2rem;
+    border-radius: 10rem;
+    overflow: hidden;
+}
+
+.crud-boton input {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: var(--color-dark-login);
+    color: var(--color-white);
+    font-size: var(--size-small);
+
+}
+
+.crud-boton input:hover {
+    cursor: pointer;
+}
+
+.cerrar-sesion {
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+
+form .cerrar-sesion input {
+    width: auto;
+    background: none;
+}
+
+form .cerrar-sesion input:hover {
+    cursor: pointer;
+    color: var(--color-white);
+}
